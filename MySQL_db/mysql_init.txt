@@ -94,3 +94,5 @@ values
 (5,"Name5","name5@gmail.com","1345678",5)
 
 select * from people (left/right) join city on people.city_id = city.id
+
+update city set name = "Bangalore" where id = 1
