@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Basic Webpage</title>
+    <link rel="stylesheet" href="static/mystyle.css" />
+</head>
+
+<body>
+    <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/about'>About</a></li>
+        <li><a href='/contact'>Contact</a></li>
+        <li><a href='/sign_up'>Sign Up</a></li>
+        <li><a href='/user_detail'>Details</a></li>
+    </ul>
+
+    <h1 style="text-align:center;">Delete User</h1>
+
+    <div>
+        <form action="/delete" method="POST">
+            <label for="id">ID</label>
+            <br>
+            <input type="text" id="id" name="id" placeholder="Your ID..">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

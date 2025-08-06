@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Basic Webpage</title>
+    <link rel="stylesheet" href="static/mystyle.css" />
+</head>
+
+<body>
+
+    <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/about'>About</a></li>
+        <li><a href='/contact'>Contact</a></li>
+        <li><a class="active">Sign Up</a></li>
+        <li><a href='/user_detail'>Details</a></li>
+    </ul>
+
+    <h1 style="text-align:center;">Sign up</h1>
+
+    <h3>Enter Information</h3>
+
+    <div>
+        <form action="/add" method="POST">
+            <label for="id">ID</label>
+            <br>
+            <input type="text" id="id" name="id" placeholder="Your ID..">
+            <br>
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Your name..">
+            <br>
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lname" placeholder="Your last name..">
+            <br>
+            <label for="email">E-mail</label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+            <br>
+            <label for="contact">Contact</label>
+            <br>
+            <input type="text" id="contact" name="contact" placeholder="Your contact..">
+            <br>
+            <label for="country">Country</label>
+            <br>
+            <select id="country" name="country">
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="Germany">Germany</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+            <a href="/update_user" style="display: inline-block; padding: 10px 10px;">Update</a>
+            <a href="/delete_user" style="display: inline-block; padding: 10px 10px;">Delete</a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

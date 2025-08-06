@@ -1,0 +1,11 @@
+Create a folder flask_app
+Open only this folder in VSCode
+
+Execute in terminal:
+pwd (to check path)
+python -m venv myenv
+myenv\Scripts\Activate.ps1
+pip install Flask
+python.exe -m pip install --upgrade pip
+flask run
+pip install flask-mysqldb
